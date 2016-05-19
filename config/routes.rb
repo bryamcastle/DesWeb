@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  resources :parkeos
   resources :profiles, only: [:edit, :update]
+  
+  resources :estacionamientos
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   get 'pages/index'

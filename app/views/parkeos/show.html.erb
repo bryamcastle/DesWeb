@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @parkeo.codigo %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @parkeo.description %>
+</p>
+
+<%= link_to 'Edit', edit_parkeo_path(@parkeo) %> |
+<%= link_to 'Back', parkeos_path %>
